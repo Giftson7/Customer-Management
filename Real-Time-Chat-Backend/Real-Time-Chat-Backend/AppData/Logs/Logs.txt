@@ -1,0 +1,413 @@
+INFO  2025-08-03 12:12:05,144 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-03 12:12:05,257 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-03 12:12:05,260 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-03 12:12:05,263 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-03 12:12:12,387 [9    ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-03 12:12:12,394 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetRoleBasedUsers
+INFO  2025-08-03 12:12:12,567 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 401
+INFO  2025-08-03 12:13:56,933 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-03 12:13:57,030 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-03 12:13:57,033 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-03 12:13:57,035 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-08 12:16:56,808 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 12:16:56,878 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 12:16:56,880 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 12:16:56,882 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-08 13:16:33,790 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 13:16:33,859 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 13:16:33,861 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 13:16:33,863 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-08 13:40:38,278 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 13:40:38,347 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 13:40:38,350 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 13:40:38,351 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-08 13:42:05,137 [9    ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-08 13:42:05,144 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Common/InsertUserDetails
+INFO  2025-08-08 13:42:05,506 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 401
+INFO  2025-08-08 13:42:45,121 [10   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GenerateToken
+INFO  2025-08-08 13:42:45,238 [10   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 13:43:01,639 [3    ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Common/InsertUserDetails
+INFO  2025-08-08 13:43:01,733 [3    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 400
+INFO  2025-08-08 13:48:46,581 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 13:48:46,670 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 13:48:46,672 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 13:48:46,674 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-08 13:49:06,499 [9    ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-08 13:49:06,506 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GenerateToken
+INFO  2025-08-08 13:49:06,714 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 13:49:47,203 [14   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Common/InsertUserDetails
+INFO  2025-08-08 13:49:47,613 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (94ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 15), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UsersDetails] ([Address], [Age], [PhoneNumber], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+INFO  2025-08-08 13:49:47,674 [19   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 13:53:17,511 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 13:53:17,598 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 13:53:17,600 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 13:53:17,602 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-08 13:55:21,846 [18   ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-08 13:55:21,853 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GenerateToken
+INFO  2025-08-08 13:55:22,065 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 13:56:20,700 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Common/InsertUserDetails
+INFO  2025-08-08 13:56:21,089 [22   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 15), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserDetails] ([Address], [Age], [PhoneNumber], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+INFO  2025-08-08 13:56:21,145 [22   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 14:21:02,961 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 14:21:03,039 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 14:21:03,042 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 14:21:03,045 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-08 14:23:55,050 [20   ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-08 14:23:55,056 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetAllUserDetails
+INFO  2025-08-08 14:23:55,490 [22   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Username], [u].[Email], [u].[Password], [u0].[UserId], [u0].[PhoneNumber], [u0].[Address], [u0].[Age], [u].[Role]
+FROM [Users] AS [u]
+INNER JOIN [UserDetails] AS [u0] ON [u].[Id] = [u0].[UserId]
+INFO  2025-08-08 14:23:55,522 [22   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 14:24:10,242 [22   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetAllUserDetails
+INFO  2025-08-08 14:24:17,510 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Username], [u].[Email], [u].[Password], [u0].[UserId], [u0].[PhoneNumber], [u0].[Address], [u0].[Age], [u].[Role]
+FROM [Users] AS [u]
+INNER JOIN [UserDetails] AS [u0] ON [u].[Id] = [u0].[UserId]
+INFO  2025-08-08 14:24:39,554 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 14:39:04,634 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-08 14:39:04,697 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-08 14:39:04,700 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-08 14:39:04,702 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-08 14:39:44,554 [9    ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-08 14:39:44,562 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetAllUserDetailsByUserId
+INFO  2025-08-08 14:39:45,248 [14   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (66ms) [Parameters=[@__UserId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Username], [u].[Email], [u].[Password], [u0].[UserId], COALESCE([u0].[PhoneNumber], N'') AS [PhoneNumber], [u0].[Address], [u0].[Age], [u].[Role]
+FROM [Users] AS [u]
+INNER JOIN [UserDetails] AS [u0] ON [u].[Id] = [u0].[UserId]
+WHERE [u0].[UserId] = @__UserId_0
+INFO  2025-08-08 14:39:45,300 [14   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-08 14:39:56,363 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetAllUserDetails
+INFO  2025-08-08 14:39:56,459 [14   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Username], [u].[Email], [u].[Password], [u0].[UserId], COALESCE([u0].[PhoneNumber], N'') AS [PhoneNumber], [u0].[Address], [u0].[Age], [u].[Role]
+FROM [Users] AS [u]
+INNER JOIN [UserDetails] AS [u0] ON [u].[Id] = [u0].[UserId]
+INFO  2025-08-08 14:39:56,466 [14   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 11:37:58,019 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 11:37:58,030 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 11:37:58,030 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 11:37:58,031 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-09 11:40:06,056 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 11:40:06,125 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 11:40:06,128 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 11:40:06,130 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-09 12:42:18,741 [22   ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-09 12:42:18,749 [22   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/auth/login
+INFO  2025-08-09 12:42:19,552 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (75ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-09 12:42:19,676 [23   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:09:45,966 [22   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-09 13:09:46,056 [22   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-09 13:09:46,060 [22   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:14:34,957 [14   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-09 13:14:35,018 [16   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-09 13:14:35,021 [16   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:15:10,972 [16   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-09 13:15:10,982 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-09 13:15:10,985 [9    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:32:06,355 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 13:32:06,423 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 13:32:06,426 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 13:32:06,427 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-09 13:34:03,768 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 13:34:03,844 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 13:34:03,846 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 13:34:03,848 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-09 13:46:07,231 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 13:46:07,303 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 13:46:07,306 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 13:46:07,308 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-09 13:54:28,712 [21   ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-09 13:54:28,721 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:54:29,350 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:54:29,412 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:54:38,874 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:54:38,990 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:54:38,994 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:54:45,926 [3    ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-09 13:54:46,147 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (41ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-09 13:54:46,245 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:54:46,300 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:54:46,321 [3    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:54:46,325 [3    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:54:56,225 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:54:59,428 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:55:08,418 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:55:38,594 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:55:38,605 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:55:38,611 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:56:09,747 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:56:09,759 [24   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:56:09,763 [24   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:56:28,452 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:56:28,458 [26   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:56:28,463 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:56:32,485 [24   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:56:32,492 [18   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:56:32,496 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:57:28,228 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:57:28,242 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:57:28,249 [25   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:58:17,788 [25   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:58:17,806 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:58:17,813 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:58:56,120 [28   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:58:56,144 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:58:56,147 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:58:58,042 [28   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:58:58,050 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:58:58,054 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 13:58:58,984 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 13:58:58,991 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 13:58:58,995 [29   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:05:19,645 [25   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:05:19,654 [28   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:05:19,659 [28   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:14:09,154 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 14:14:09,224 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 14:14:09,227 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 14:14:09,229 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-09 14:14:22,047 [15   ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-09 14:14:22,053 [15   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:14:22,667 [14   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:14:22,705 [14   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:15:28,723 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-09 14:15:28,797 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-09 14:15:28,799 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-09 14:15:28,801 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-09 14:15:39,892 [7    ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-09 14:15:39,897 [7    ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:15:40,522 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:15:40,562 [5    ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:30:33,716 [17   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:30:33,820 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:30:33,825 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:30:57,834 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Common/AddCustomers
+INFO  2025-08-09 14:30:58,090 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customer] ([AvatarColor], [CustomerType], [Email], [FirstName], [LastName], [Phone], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INFO  2025-08-09 14:30:58,119 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:31:21,037 [25   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:31:21,045 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:31:21,050 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:39:33,992 [25   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:39:34,031 [26   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:39:34,035 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:43:37,812 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:43:37,827 [24   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:43:37,835 [24   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:44:14,511 [24   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:44:14,525 [17   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:44:14,533 [17   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:44:25,312 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:44:25,319 [17   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:44:25,325 [17   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:44:39,129 [19   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:44:39,138 [18   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:44:39,141 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:44:55,614 [19   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:44:55,623 [18   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:44:55,626 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:46:29,067 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:46:29,081 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:46:29,087 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:46:45,954 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-09 14:46:46,037 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-09 14:46:46,069 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-09 14:46:46,106 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-09 14:46:46,124 [11   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-09 14:46:46,127 [11   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-11 15:14:17,139 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-11 15:14:17,347 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-11 15:14:17,351 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-11 15:15:24,128 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-11 15:15:24,153 [28   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-11 15:15:24,167 [28   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-12 11:27:15,677 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-12 11:27:15,745 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-12 11:27:15,748 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-12 11:27:15,751 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-15 21:53:11,420 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-15 21:53:11,525 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-15 21:53:11,527 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-15 21:53:11,530 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+INFO  2025-08-15 22:21:40,347 [1    ] Microsoft.Hosting.Lifetime               - Now listening on: http://localhost:6001
+INFO  2025-08-15 22:21:40,440 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2025-08-15 22:21:40,444 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2025-08-15 22:21:40,447 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Real Time Chat Project\Real-Time-Chat-Backend\Real-Time-Chat-Backend
+WARN  2025-08-15 22:28:50,574 [23   ] e.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+INFO  2025-08-15 22:28:50,579 [23   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/google
+INFO  2025-08-15 22:28:51,976 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (104ms) [Parameters=[@__payload_Email_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__payload_Email_0
+INFO  2025-08-15 22:28:52,128 [24   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 4000), @p4='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [Password], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INFO  2025-08-15 22:28:52,225 [24   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 22:28:52,267 [23   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 22:28:52,411 [26   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 22:28:52,420 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 22:31:16,878 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/google
+INFO  2025-08-15 22:31:16,913 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__payload_Email_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__payload_Email_0
+INFO  2025-08-15 22:31:16,919 [25   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 22:31:16,959 [33   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 22:31:16,973 [26   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 22:31:16,979 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 22:57:12,394 [31   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/google
+INFO  2025-08-15 22:57:12,434 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__payload_Email_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__payload_Email_0
+INFO  2025-08-15 22:57:12,443 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 4000), @p4='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [Password], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INFO  2025-08-15 22:57:12,448 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 22:57:12,506 [31   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 22:57:12,524 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 22:57:12,534 [27   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:35:16,550 [29   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-15 23:35:16,596 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-15 23:35:16,601 [29   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:35:16,649 [32   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 23:35:16,657 [15   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 23:35:16,661 [15   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:37:20,500 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-15 23:37:20,510 [26   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-15 23:37:20,517 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:37:20,575 [20   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 23:37:20,583 [15   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 23:37:20,587 [15   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:48:36,892 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-15 23:48:36,913 [21   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-15 23:48:36,916 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:48:36,966 [21   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 23:48:36,975 [18   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 23:48:36,979 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:50:46,415 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Request: POST /api/Auth/login
+INFO  2025-08-15 23:50:46,425 [26   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__request_Username_0='?' (Size = 50), @__request_Password_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Password_1
+INFO  2025-08-15 23:50:46,432 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
+INFO  2025-08-15 23:50:46,478 [26   ] at_Backend.MiddleWares.LoggingMiddleware - Request: GET /api/Common/GetCustomers
+INFO  2025-08-15 23:50:46,485 [18   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[FirstName], [c].[LastName], [c].[Title], [c].[Email], [c].[Phone], [c].[CustomerType], [c].[Status], [c].[AvatarColor]
+FROM [Customer] AS [c]
+INFO  2025-08-15 23:50:46,489 [18   ] at_Backend.MiddleWares.LoggingMiddleware - Response: 200
