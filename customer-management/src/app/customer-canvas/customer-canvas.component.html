@@ -1,0 +1,197 @@
+<div class="customer-management-container">
+  <!-- Left Sidebar - Filter Panel -->
+  <aside class="filter-panel">
+    <div class="filter-section">
+      <h3>Customer type</h3>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="customerType" value="all" [(ngModel)]="selectedCustomerType" (change)="filterCustomers()">
+          <span class="radio-custom"></span>
+          Show all
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="customerType" value="premium" [(ngModel)]="selectedCustomerType" (change)="filterCustomers()">
+          <span class="radio-custom"></span>
+          Premium
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="customerType" value="standard" [(ngModel)]="selectedCustomerType" (change)="filterCustomers()">
+          <span class="radio-custom"></span>
+          Standard
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    <!-- Header with Search, Sort, and Add Button -->
+    <header class="content-header">
+      <div class="search-sort-container">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input 
+            type="text" 
+            placeholder="Search customers..." 
+            [(ngModel)]="searchTerm"
+            (input)="filterCustomers()"
+            class="search-input">
+        </div>
+        
+        <div class="sort-dropdown">
+          <button class="sort-button" (click)="toggleSortDropdown()">
+            Sort
+            <svg class="chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+          <div class="sort-options" [class.show]="showSortDropdown">
+            <button class="sort-option" (click)="sortCustomers('name-asc')">Name A-Z</button>
+            <button class="sort-option" (click)="sortCustomers('name-desc')">Name Z-A</button>
+            <button class="sort-option" (click)="sortCustomers('email-asc')">Email A-Z</button>
+            <button class="sort-option" (click)="sortCustomers('email-desc')">Email Z-A</button>
+          </div>
+        </div>
+      </div>
+      
+      <button class="add-customer-btn" (click)="openAddCustomerForm()">
+        Add customer
+      </button>
+
+      <button class="log-out-btn" (click)="logOut()">
+        Log Out
+      </button>
+
+    </header>
+
+    <!-- Customer List -->
+    <section class="customer-list">
+      <div class="customer-grid">
+        @for (customer of filteredCustomers; track customer.id) {
+          <app-customer-widget 
+            [customer]="customer"
+            (view)="viewCustomer(customer)"
+            (edit)="editCustomer(customer)"
+            (delete)="deleteCustomer(customer)">
+          </app-customer-widget>
+        }
+      </div>
+      
+      <div *ngIf="filteredCustomers.length === 0" class="no-customers">
+        <p>No customers found matching your criteria.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Right Side Panel - Add Customer Form -->
+  <aside class="add-customer-panel" [class.open]="showAddForm">
+    <div class="panel-overlay" (click)="closeAddCustomerForm()"></div>
+    <div class="panel-content">
+      <div class="panel-header">
+        <h2>Add New Customer</h2>
+        <button class="close-btn" (click)="closeAddCustomerForm()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="customer-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select id="title" formControlName="title" class="form-select">
+            <option value="">-- Please select --</option>
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+          </select>
+          <div *ngIf="customerForm.get('title')?.invalid && customerForm.get('title')?.touched" class="error-message">
+            Title is required
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input 
+              type="text" 
+              id="firstName" 
+              formControlName="firstName" 
+              class="form-input"
+              [class.error]="customerForm.get('firstName')?.invalid && customerForm.get('firstName')?.touched">
+            <div *ngIf="customerForm.get('firstName')?.invalid && customerForm.get('firstName')?.touched" class="error-message">
+              First name is required
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input 
+              type="text" 
+              id="lastName" 
+              formControlName="lastName" 
+              class="form-input"
+              [class.error]="customerForm.get('lastName')?.invalid && customerForm.get('lastName')?.touched">
+            <div *ngIf="customerForm.get('lastName')?.invalid && customerForm.get('lastName')?.touched" class="error-message">
+              Last name is required
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            formControlName="email" 
+            class="form-input"
+            [class.error]="customerForm.get('email')?.invalid && customerForm.get('email')?.touched">
+          <div *ngIf="customerForm.get('email')?.invalid && customerForm.get('email')?.touched" class="error-message">
+            <span *ngIf="customerForm.get('email')?.errors?.['required']">Email is required</span>
+            <span *ngIf="customerForm.get('email')?.errors?.['email']">Please enter a valid email</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            formControlName="phone" 
+            class="form-input"
+            [class.error]="customerForm.get('phone')?.invalid && customerForm.get('phone')?.touched">
+          <div *ngIf="customerForm.get('phone')?.invalid && customerForm.get('phone')?.touched" class="error-message">
+            <span *ngIf="customerForm.get('phone')?.errors?.['required']">Phone is required</span>
+            <span *ngIf="customerForm.get('phone')?.errors?.['pattern']">Please enter a valid phone number</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="customerType">Customer type</label>
+          <select id="customerType" formControlName="customerType" class="form-select">
+            <option value="">-- Please select --</option>
+            <option value="premium">Premium</option>
+            <option value="standard">Standard</option>
+          </select>
+          <div *ngIf="customerForm.get('customerType')?.invalid && customerForm.get('customerType')?.touched" class="error-message">
+            Customer type is required
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" (click)="closeAddCustomerForm()">Cancel</button>
+          <button type="submit" class="btn-primary" [disabled]="customerForm.invalid">Add Customer</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Snackbar for notifications -->
+  <div class="snackbar" [class.show]="showSnackbar">
+    {{ snackbarMessage }}
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="customer-card">
+  <div class="card-header">
+    <div class="avatar" [style.background-color]="customer.avatarColor">
+      <span class="initials">{{ initials }}</span>
+    </div>
+    <div class="customer-info">
+      <h3 class="customer-name">{{ fullName }}</h3>
+      <p class="customer-email">{{ customer.email }}</p>
+      <p class="customer-phone">{{ customer.phone }}</p>
+    </div>
+  </div>
+  
+  <div class="card-body">
+    <div class="customer-details">
+      <div class="detail-item">
+        <span class="label">Type:</span>
+        <span class="customer-type" [class.premium]="customer.customerType === 'premium'">
+          {{ customer.customerType | titlecase }}
+        </span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Status:</span>
+        <span class="status-badge" [class.active]="customer.status === 'active'">
+          {{ customer.status | titlecase }}
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-actions">
+    <button class="action-btn view-btn" (click)="onView()">
+      View
+    </button>
+    <button class="action-btn edit-btn" (click)="onEdit()">
+      Edit
+    </button>
+    <button class="action-btn delete-btn" (click)="onDelete()">
+      Delete
+    </button>
+  </div>
+</div> 
